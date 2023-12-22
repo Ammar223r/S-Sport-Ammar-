@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proudcts</title>
+    <link rel="stylesheet" href="cart.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=El+Messiri:wght@500&family=Montserrat:wght@500&family=Pacifico&family=Rubik:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+<!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body  >
+    <!-- login -->
+    <div class="login">
+        <form action="">
+            <h1 class="h1" style="color: #fff;">Login</h1>
+            <span class="close2">x</span>
+            <hr style="margin: 0;">
+            <div class="inputControl">
+                <label class="label1">Email</label>
+                <input  id="email" type="text" placeholder="abc@exampl.com">
+                <div class="error"></div>
+            </div>
+            <div class="inputControl">
+                <label class="label2">Password</label>
+                <input id="password" type="password" placeholder="enter your password!">
+                <div class="error"></div>
+            </div>
+            <input class="button15" type="submit"></input>
+        </form>
+    </div>
+    <!-- end login -->
+    <nav>
+        <p class="navbar-brand" style="font-size: 30px; margin: auto; margin-left: 10px; color: #fff;" ><span class="yellow">S</span>Shop</p>
+        <ul class="nav nav-pills" >
+            <li class="nav-item"><a  href="home.html">HOME   <i class="fa-solid fa-house"></i></a></li>
+            <li class="nav-item"><a href="">ABOUT US   <i class="fa-regular fa-address-card"></i></a></li>
+            <li class="nav-item" ><a href="sign-up.html">SIGN UP    <i class="fa-solid fa-user-plus"></i></a>
+            <li class="nav-item"><a href="">DISCOVER   <i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li class="nav-item"><a class="active" href=""> <i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li class="nav-item"><a href=""> <i id="showLogin" class="fa-solid fa-user"></i></a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <div class="info">
+        <h1>Proudcts List</h1>
+    
+        <header>
+            <div class="shopping">
+                <img class="iconcart" src="./image/shopingbag.png" alt="">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+
+    </div>
+
+    
+        <div class="payment">
+            <span class="close">x</span>
+
+            <p class="payp">check out</p>
+            <div class="group1">
+                <label for="">full name</label>
+                <input type="text">
+            </div>
+    
+            <div class="group2">
+                <label for="">phone number </label>
+                <input type="text" placeholder="+20">
+            </div>
+    
+            <div class="group3">
+                <label for="">address</label>
+                <input type="text">
+            </div>
+    
+            <div class="group4">
+                <label for="">country</label>
+                <select name="" id="">
+                    <option value="">Choose...</option>
+                    <option value="">Egypt</option>
+                </select>
+            </div>
+            
+            <div class="group5">
+                <label for="">city</label>
+                <select name="" id="">
+                    <option value="">Choose...</option>
+                    <option value="">Mansoura</option>
+                </select>
+            </div>
+
+            <input class="btn244" type="submit" value="Chekout">
+            <div class="icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-paypal"></i>
+            </div>
+
+        </div>
+        
+
+        <div class="list">
+
+        </div>
+<!-- cart -->
+        <div class="cart-tab">
+            <h2 class="pcart">Shopping Cart</h2>
+            <ul class="ListCard"></ul>
+            <div class="bton">
+            <button class="close11">Close</button>
+            <button class="chekout">Chekout</button>
+            </div>
+        </div>
+<!-- cart -->
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

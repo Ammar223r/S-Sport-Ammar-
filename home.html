@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> S SPORT </title>
+    <!-- 0000000000000000000 -->
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=El+Messiri:wght@500&family=Montserrat:wght@500&family=Pacifico&family=Rubik:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 0000000000000000000 -->
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+</head>
+<body>
+        <!-- login -->
+        <div class="login">
+            <form action="">
+                <h1 class="h1" style="color: #fff;">Login</h1>
+                <span class="close">x</span>
+                <hr style="margin: 0;">
+                <div class="inputControl">
+                    <label class="label1">Email</label>
+                    <input  id="email" type="text" placeholder="abc@exampl.com">
+                    <div class="error"></div>
+                </div>
+                <div class="inputControl">
+                    <label class="label2">Password</label>
+                    <input id="password" type="password" placeholder="enter your password!">
+                    <div class="error"></div>
+                </div>
+                <input class="button15" type="submit"></input>
+            </form>
+        </div>
+        <!-- end login -->
+    <!-- home -->
+    <div class="home" >
+        <header> 
+            <nav>
+                <p class="navbar-brand" style="font-size: 30px; margin: auto; margin-left: 10px;" ><span class="yellow">S</span>Shop</p>
+                <ul class="nav nav-pills" >
+                    <li class="nav-item"><a class="active" href="">HOME   <i class="fa-solid fa-house"></i></a></li>
+                    <li class="nav-item"><a href="">ABOUT US   <i class="fa-regular fa-address-card"></i></a></li>
+                    <li class="nav-item" ><a href="sign-up.html">SIGN UP    <i class="fa-solid fa-user-plus"></i></a>
+                    <li class="nav-item"><a  href="#sec">DISCOVER   <i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="nav-item"><a href=""> <i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="nav-item"><a href=""> <i id="showLogin" class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main-area">
+            <h1><span class="yellow">S</span>port Shop</h1>
+            <p> All the sports supplies in website </p>
+            <button class="btn1">Discover More<a href="#sec2"></a></button>
+            <!-- local storage -->
+            <div id="image">
+                <div id="im1"></div>
+                <div id="im2"></div>
+                <div id="im3"></div>
+            </div>
+            <!-- local storage -->
+        </div>
+    </div>
+
+    <!-- end home -->
+        <!-- login -->
+        <div class="login">
+            <form action="">
+                <h1 class="h1">Sign-up</h1>
+                <span class="close">x</span>
+                <hr>
+                <div class="inputControl">
+                    <label class="label1">Email</label>
+                    <input id="email" type="text" placeholder="abc@exampl.com">
+                    <div class="error"></div>
+                </div>
+                <div class="inputControl">
+                    <label class="label2">Password</label>
+                    <input id="password" type="password" placeholder="enter your password!">
+                    <div class="error"></div>
+                </div>
+                <input class="button15" type="submit"></input>
+            </form>
+        </div>
+        <!-- end login -->
+    <!-- start products -->
+    <div class="products" id="sec2">
+        <div class="info">
+            <h2 class="h2" style="padding-top: 15px; text-align: center;"> ALL PRODUCTS </h2>
+            <!-- <h5>Sport Shop products are one of the best products </h5> -->
+        </div>
+        <div class="container3">
+            <div class="card">
+                <img class="im" src="./image/a.png" alt="">
+                <p >Equipment</p>
+                <h6 >Lorem ipsum dolor sit amet consectetur</h6>
+                <!-- <price>$120.00</price> -->
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <a style="text-decoration: none;" class="acard" href="cart3.html">All Products</a>
+            </div>
+            <div class="card">
+                <img class="im" src="./image/s6.png" alt="">
+                <p >T-Shirt</p>
+                <h6 >Lorem ipsum dolor sit amet consectetur</h6>
+                <!-- <price>$40.00</price> -->
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <a style="text-decoration: none;" class="aacard" href="cart2.html">All Products</a>
+            </div>
+            <div class="card">
+                <img class="im" src="./image/r.png" alt="">
+                <p >Shoes</p>
+                <h6 >Lorem ipsum dolor sit amet consectetur</h6>
+                <!-- <price>$75.00</price> -->
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <a style="text-decoration: none;"  style="text-decoration: none;" class="aaacard" href="cart.html">All Products</a>
+            </div>
+        </div>
+    </div>
+            <!-- end products  -->
+
+            <!-- beatuy Products -->
+<div id="sec" class="beaty">
+    <div class="container2">
+
+        <div class="beCard1" >
+            <p>Sports<span style="display: block; font-size: 45px;">Duffle</span> <span>Bag</span></p>
+            <button>Buy Now</button>
+            <img class="b1" src="image/b1.png" alt="">
+        </div>
+
+        <div class="beCard2" >
+            <p>Mens<span style="display: block; font-size: 45px;">Multipack</span> <span>T-Shirt</span></p>
+            <button>Buy Now</button>
+            <img class="b2" src="image/b2.png" alt="">
+        </div>
+
+        <div class="beCard3" >
+            <p>Use<span style="display: block; font-size: 45px;">Dumbell</span> <span>to Practise </span></p>
+            <button>Buy Now</button>
+            <img class="b3" src="image/b3.png" alt="">
+        </div>
+
+        <div class="beCard4" >
+            <p>Adidas<span style="display: block; font-size: 40px;">SportWear</span> <span>Men</span></p>
+            <button>Buy Now</button>
+            <img class="b4" src="image/b4.png" alt="">
+        </div>
+
+    </div>
+</div>
+            <!-- beatuy Products -->
+<!-- start no name -->
+    <div  class="no-name">
+        <div class="container">
+            <h2>DON’T <span>THINK</span>, BEGIN <span>TODAY</span>!</h2>
+            <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet</p>
+            <form action="">
+            <button><a href="sign-up.html">Become a member</a></button>
+        </div>
+    </div>
+<!-- end no name -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="sec about">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quaerat dolor vero impedit.Recusandae reiciendis nulla 
+                    autem obcaecati voluptatum, aperiam fugiat .</p>
+                    <ul class="ul1">
+                        <li class="li1"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="li1"><a href=""><i class="fa-brands fa-twitter"></i></i></a></li>
+                        <li class="li1"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="li1"><a href=""><i class="fa-brands fa-linkedin"></i></i></a></li>
+                    </ul>
+                </div>
+                <div class="sec quicklink">
+                    <h3>Quick List</h3>
+                    <ul class="ul2">
+                        <li class="li2"><a href="">About Us</a></li>
+                        <li class="li2"><a href="home.html">Home</a></li>
+                        <li class="li2"><a href="">FAQ</a></li>
+                        <li class="li2"><a href="">privacy Police</a></li>
+                        <li class="li2"><a href="">Help</a></li>
+                        <li class="li2"><a href="">Terms & Consitions</a></li>
+                    </ul>
+                </div>
+                <div class="sec contact">
+                    <h3>contact Info</h3>
+                    <ul class="info2">
+                        <li class="li3">
+                            <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+                            <span>647 Lala Street <br>
+                                
+                                Phoenixvilla, PA 19460,<br>Egy</span>
+                        </li>
+                        <li class="li3">
+                            <span><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+                            <p><a href="tel:12345000">+123 456 78900</a><br>
+                                <a href="tel:12345000">+123 456 78900</a></p>
+                        </li>
+                        <li class="li3">
+                            <span><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                            <p><a href="mailto:Knowmore@gmail.com">Knowmore@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+    </div>
+    </footer> 
+    <div class="copy">
+        <p>Copyright © 2023 online Tutorials. All Right Reserved.</p>
+    </div>
+
+            <!-- end footer -->
+<script src="main.js"></script>
+</body>
+</html>

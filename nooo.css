@@ -1,0 +1,38 @@
+body {
+    height: 4172vh;
+}
+.container {
+    margin: 200px auto;
+    width: 1200px;
+}
+.container .color-switcher {
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.container .color-switcher li {
+    width:30px;
+    height: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+.container .color-switcher li:first-child{
+    background-color: brown;
+}
+.container .color-switcher li:nth-child(2){
+    background-color: darkgreen;
+}
+.container .color-switcher li:nth-child(3){
+    background-color: rgb(46, 46, 204);
+}
+.container .color-switcher li:nth-child(4){
+    background-color: black;
+}
+.container h3 {
+    color: brown;
+}
+.container div {
+    background-color: brown;
+    padding: 20px;
+    color: #fff;
+}

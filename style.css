@@ -1,0 +1,746 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+/* ---------------------------------------------------------home */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgb(0 0 0 / 73%) 0, rgb(0 0 0 / 60%) 60%, rgb(17 17 17 / 80%) 100%) , url(./image/HOME.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff4f4; 
+    border-bottom: 10px solid #000;
+}
+
+/* a {
+    color:#596075 ;
+}
+.inp1 {
+    width: 60%;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    left: -150px;
+}
+/* .inp1::before {
+    content: '';
+    width: 100%;
+    background-color: red;
+    position: relative;
+
+    
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px  0 7px 10px;
+    background-color: #222121e0;
+    height: 67px;
+    
+}
+
+nav  .logo {
+    font-size: 30px;
+    top: 10px;
+    left: 29px;
+    cursor: pointer;
+    color: #f5f2f2;
+    /
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li  {
+    list-style: none;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 15px;
+    margin-right: 30px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    
+}
+nav ul li a {
+    color: #596075;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+} 
+nav ul li .active::before {
+    content: "";
+    background-color: #ffffff;
+    width: 70%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+nav ul li a::after {
+    content: "";
+    background-color: #ffffff;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 20px;
+} 
+nav ul li a:hover {
+    width: 90%;
+    color: #d1741d;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+nav ul li a:hover:after {
+    width: 70%;
+    color: #fff4f4;
+}
+nav ul li i {
+    color: #fff4f4;
+    font-size: 17px;
+}
+.yellow {
+    color: #ff9b3e;
+}
+
+.fa-cart-shopping:hover {
+    transition: 0.3s ease;
+    color: #ff9b3e;
+}
+.fa-user:hover {
+    transition: 0.3s ease;
+    color: #ff9b3e;
+}
+.main-area {
+    position: relative;
+    top: 30%;
+    text-align: center;
+}
+.main-area p {
+    font-size: 43px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.main-area h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.main-area .btn1 {
+    padding: 14px 25px;
+    font-size: 15px;
+    background-color: #000000;
+    outline: none;
+    border: none;
+    color: #ffffff;
+}
+.main-area .btn1:hover {
+    background-color: #000000;
+    color:#ff9b3e ;
+    letter-spacing: 1;
+    transition: 0.3s ease;
+    cursor: pointer;
+} 
+/* local storage */
+#image{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 20px 0;
+    color: #fff;
+    font-size: 20px;
+    border-radius:10px ;
+    margin-top: 20px;
+    margin-left: 10px ;
+    position: absolute;
+    left: 46%;
+    top: 25rem;
+}
+#im1,#im2,#im3 {
+    margin-right: 9px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgb(221, 210, 210);
+    text-align: center;
+    padding: 6px;
+    border-radius:10px ;
+    cursor: pointer;
+}
+#im1:hover {
+    transition: 0.8s ease;
+    background-color: #d1741d;
+    transform: scale(1.2);
+}
+#im2:hover {
+    transition: 0.8s ease;
+    background-color: #d1741d;
+    transform: scale(1.2);
+}
+#im3:hover {
+    transition: 0.8s ease;
+    background-color: #d1741d;
+    transform: scale(1.2);
+}
+/* local storage */
+/* products */
+
+.products .h2{
+    padding-top: 55px;
+    font-size: 25px;
+    text-align: center;
+}
+.products h5 {
+    text-align: center;
+    font-size:20px; 
+    color:#97a0bb;
+    padding-top: 4px;;
+}
+.products h5::after {
+    content: "";
+    width: 55%;
+    height: 5px;
+    background-color: rgb(29, 28, 28);
+    position: relative;
+    display: block;
+    left: 210px;
+    border-radius: 6px;
+    top: 6px;
+}
+.products .container3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+}
+.products .card {
+    width: 25%;
+    margin: 20px;
+    float: left;
+    text-align: center;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: -1px 14px 28px 5px rgba(0, 0, 0, 0.25),
+    1px 4px 10px 5px rgba(0, 0, 0, 0.22);
+    transition: 0.4s;
+    background-color: #f2f2f2;
+}
+.products .card:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+.products .card .im {
+    width: 143px;
+    height: 150px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.products .card p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.products .card h6{
+    text-align: center;
+    color: #7e7878;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.products .card price {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    color: #222f3e;
+}
+.products .card ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+
+}
+.products .card ul li {
+    padding-top: 10px;
+}
+.fa {
+    font-size: 15px;
+    transition: 0.4s;
+    margin: 2px;
+}
+.fa:hover {
+    transform: scale(1.3);
+    transition: 0.6s;
+}
+    
+
+.checked {
+    color: #ff9f43;
+}
+    
+
+.products .card .acard {
+    height: 35px;
+    text-align: center;
+    display: block;
+    margin-top: 18px;
+    background: #000000;
+    padding-top: 4px;
+    color: #fff;
+}
+.products .card .aacard {
+    height: 35px;
+    text-align: center;
+    display: block;
+    margin-top: 18px;
+    background: #000000;
+    padding-top: 4px;
+    color: #fff;
+
+}
+
+.products .card .aaacard {
+    height: 35px;
+    text-align: center;
+    display: block;
+    margin-top: 18px;
+    background: #000000;
+    padding-top: 4px;
+    color: #fff;
+}
+
+/* 00000000000k0000000000000000000000 */
+.beaty{
+    scroll-behavior: smooth;
+    margin: 60px 0;
+    width: 100%;
+    height: 80vh;
+    background-color: #dbd7d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container2 {
+    margin:50px 50px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(auto , 200px);
+    grid-template-areas: "one two two two " 
+    " three three  four four ";
+    position: relative;
+}
+.container2 .beCard1 {
+    background-color:#121313;
+    color: #fff;
+    width: auto;
+    grid-area: one;
+    margin: 5px;
+    border-radius: 8px;
+    position: relative;
+}
+.container2 .beCard1 p {
+    margin: 15px 0;
+    margin-left: 13px;
+}
+.container2 .beCard1 button {
+    margin-left: 13px;
+    padding: 5px 7px;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #d1741d;
+    border-radius: 12px;
+    color: #fff;
+}
+.container2 .beCard1 .b1  {
+    width: 32%;
+    position: absolute;
+    top: 35%;
+    right: 45px;
+    transform: rotate(-15deg);
+}
+
+
+.container2 .beCard2 {
+    background-color: #121313;
+    color: #fff;
+    width: auto; 
+    grid-area: two;
+    margin: 5px;
+    border-radius: 8px;
+    position: relative;
+}
+.container2 .beCard2 p {
+    margin: 15px 0;
+    margin-left: 13px;
+}
+.container2 .beCard2 button {
+    margin-left: 13px;
+    padding: 5px 7px;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #d1741d;
+    border-radius: 12px;
+    color: #fff;
+}
+.container2 .beCard2 .b2 {
+    width: 18%;
+    right: 42px;
+    position: absolute;
+    top: 25px;
+}
+.container2 .beCard3 {
+    background-color: #121313;
+    color: #fff;
+    width: auto;
+    grid-area: three;
+    margin: 5px;
+    border-radius: 8px;
+    position: relative;
+
+}
+.container2 .beCard3 p {
+    margin: 15px 0;
+    margin-left: 13px;
+}
+.container2 .beCard3 button {
+    margin-left: 13px;
+    padding: 5px 7px;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #d1741d;
+    border-radius: 12px;
+    color: #fff;
+}
+.container2 .beCard3 .b3 {
+    width: 30%;
+    right: 40px;
+    position: absolute;
+    top: 44px;
+}
+.container2 .beCard4 {
+    background-color:#121313;
+    color: #fff;
+    width: auto;
+    grid-area: four;
+    margin: 5px;
+    border-radius: 8px;
+    position: relative;
+}
+.container2 .beCard4 p {
+    margin: 15px 0;
+    margin-left: 13px;
+}
+.container2 .beCard4 button {
+    margin-left: 13px;
+    padding: 5px 7px;
+    position: absolute;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #d1741d;
+    border-radius: 12px;
+    color: #fff;
+}
+.container2 .beCard4 .b4 {
+    width: 30%;
+    position: relative;
+    top: -40px;
+    right: -200px;
+}
+
+/* ------------------------------beaty products  */
+.no-name {
+    background-image:linear-gradient(to left, rgb(0 0 0 / 80%) 0, rgb(0 0 0 / 80%) 60%, rgb(17 17 17 / 80%) 100%) , url(./image/victor-freitas-WvDYdXDzkhs-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 96px 0;
+    margin: 57px 0 0 0;
+    color: #ffffff;
+    margin: 50px 0;
+}
+.no-name .container {
+    max-width: 665px;
+    margin: auto;
+}
+.no-name .container h2 {
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+.no-name .container p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.no-name .container button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.no-name .container button  {
+    margin-left: -20px;
+    outline: none;
+    border: 0;
+    padding: 11px 17px;
+    background-color: #e97203;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.no-name .container button:hover {
+    background-color: #a75204;
+    color:#ffffff;
+}
+/* END NO NAME */
+/* ---------------------------------------------------footer */
+footer {
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0a0a0a;
+    color: #fff;
+}
+.footer {
+    position: relative;
+    padding: 50px 80px 25px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer .container .sec {
+    margin-right: 30px; 
+} 
+.footer .container .sec.about {
+    width: 40%;
+    margin-right: 30px;
+}
+.footer .sec.about h3 {
+    position: relative;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.footer .container h3::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #ff9b3e;
+}
+.footer  p {
+    color: #999;
+}
+.sec .ul1 {
+    margin-top: 20px;
+    display: flex;
+}
+.sec .li1 a {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    background: #222;
+    border-radius: 4px;
+}
+.sec .li1 a:hover {
+    background-color: #d1741d;
+    color: #fff;
+}
+.quicklink {
+    position: relative;
+    width: 25%;
+}
+.quicklink .ul2 .li2 a {
+    color: #999;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quicklink .ul2 .li2 a:hover {
+    color: #fff;
+}
+.footer .sec.quicklink h3 {
+    position: relative;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.footer .sec.contact h3 {
+    position: relative;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.contact {
+    width: calc(30% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info2 {
+    position: relative;
+}
+.contact .info2 .li3 {
+    display: flex;
+    margin-bottom: 16px;
+}
+.fa-solid {
+    margin-right: 8px;
+}
+.contact .info2 .li3:nth-child(1) {
+    color: #fff;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.contact .info2 .li3 span {
+    color: #999;
+}
+.contact .info2 .li3 span a {
+    color: #999;
+}
+.contact .info2 .li3 a:hover {
+    color: #fff;
+}
+.copy {
+    width: 100%;
+    background-color: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+/* login */
+.login {
+    width: 300px;
+    background-color: #000000d7;
+    margin:50px auto;
+    text-align: center;
+    border-radius: 14px;
+    position: relative;
+    left: 67%;
+    display: none;
+    z-index: 500;
+    position: fixed;
+    border-top: #fff solid 2px;
+}
+.close {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    top: -24px;
+    left: 7rem;
+    font-size: 20px;
+    background-color: rgba(218, 36, 36, 0.726);
+    color: #fff;
+    width: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    
+}
+.h1{
+    margin: 10px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    top: 16px;
+}
+hr{
+    border-top: 2px solid #d1741d;
+}
+form label{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+    color: #fff;
+    
+}
+form .label1 {
+    position: relative;
+    left: -90px;;
+}
+form .label2 {
+    position: relative;
+    left:-77px;;
+}
+input{
+    width: 76%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.button15{
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 85px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #d1741d;
+}
+.button15:hover{
+    background: rgba(214, 86, 64, 1);
+}
+.inputControl {
+    position: relative;
+}
+.error {
+    color: red;
+}
+/* end login */
+
+
+
+
